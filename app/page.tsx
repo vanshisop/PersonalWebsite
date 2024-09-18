@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { Github, Linkedin, ExternalLink, Download, Mail, MapPin, Calendar, Code, Coffee, Music, Sun, Moon,Car,Film } from "lucide-react"
+import { Github, Linkedin, ExternalLink, Download, Mail, MapPin, Calendar, Code, Sun, Moon,Car,Film } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import img from "./asu-removebg-preview.png"
@@ -44,9 +44,9 @@ export default function Component() {
   }, [])
 
   useEffect(() => {
-    const smoothScroll = (e: MouseEvent) => {
+    const smoothScroll = (e: Event) => {
       e.preventDefault()
-      const target = e.target as HTMLAnchorElement
+      const target = e.currentTarget as HTMLAnchorElement
       const targetId = target.getAttribute("href")
       if (targetId && targetId.startsWith("#")) {
         setIsScrolling(true)
@@ -57,15 +57,15 @@ export default function Component() {
         }
       }
     }
-
+  
     const links = document.querySelectorAll('a[href^="#"]')
     links.forEach((link) => {
-      link.addEventListener("click", smoothScroll)
+      link.addEventListener("click", smoothScroll as EventListener)
     })
-
+  
     return () => {
       links.forEach((link) => {
-        link.removeEventListener("click", smoothScroll)
+        link.removeEventListener("click", smoothScroll as EventListener)
       })
     }
   }, [])
@@ -82,7 +82,7 @@ export default function Component() {
     projects: isDarkMode ? "bg-gradient-to-br from-gray-900 to-gray-800" : "bg-gradient-to-br from-green-400 to-teal-500",
   }
 
-  const [coffeeCount, setCoffeeCount] = useState(0)
+  
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode)
@@ -91,10 +91,11 @@ export default function Component() {
   return (
     <div className={`min-h-screen ${isDarkMode ? 'dark bg-gray-900' : 'bg-gray-50'}`}>
       <header
-        className={`sticky top-0 z-10 ${
-          headerThemes[activeSection]
-        } transition-colors duration-300 ease-in-out text-white`}
-      >
+      className={`sticky top-0 z-10 ${
+        headerThemes[activeSection as keyof typeof headerThemes]
+      } transition-colors duration-300 ease-in-out text-white`}
+       >
+ 
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-4">
             <h1 className="text-2xl font-bold">Vansh Saxena</h1>
@@ -264,7 +265,7 @@ export default function Component() {
                 <li>Mantaining a 4.0 GPA</li>
   <li>Recipient of the NAmU University Scholarship, awarded for academic excellence in Computer Science.</li>
   <li>Apple CEI Swift Champion Scholarship recipient, recognized for proficiency in Swift and iOS development.</li>
-  <li>Participated in the Devil's Invent hackathon, contributing to innovative software solutions.</li>
+  <li>Participated in the Devils Invent hackathon, contributing to innovative software solutions.</li>
   <li>Contributed to a blockchain-based UAM Data Management project using Hyperledger Fabric and MongoDB.</li>
   <li>Led a team to develop a Food Delivery System using SQL and PostgreSQL for efficient time management.</li>
   <li>Completed several interdisciplinary projects, creating compilers, mastering data structures and honing machine learning with data science principles.</li>
