@@ -10,7 +10,7 @@ import moviemania from './hmman.jpg'
 import salonapp from './salonapp.jpg'
 import datanal from './adad.jpeg'
 import msayImg from './pdak.png'
-import cosmicapp from './cosmic'
+import cosmicapp from './cosmic.png'
 export default function Component() {
   const [activeSection, setActiveSection] = useState("about")
   const [isScrolling, setIsScrolling] = useState(false)
