@@ -298,13 +298,13 @@ export default function Component() {
                 {
                   title: "Personal Portfolio",
                   description: "A personal portfolio website using React and Next (you're looking at it!).",
-                  link: "https://github.com/johndoe/portfolio",
+                  link: "https://personal-portfolio-ecru-ten.vercel.app/",
                   img : personalImg,
                 },
                 {
                   title: "Cosmic Number Quest",
                   description: "A full-stack project with React, Next, Node and postgres.",
-                  link: "https://my-guessing-number-lbhc.vercel.app/play",
+                  link: "https://my-guessing-number-lbhc.vercel.app",
                   img: cosmicapp
                 },
                 {
