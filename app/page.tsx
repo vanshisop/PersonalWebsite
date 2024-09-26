@@ -10,6 +10,7 @@ import moviemania from './hmman.jpg'
 import salonapp from './salonapp.jpg'
 import datanal from './adad.jpeg'
 import msayImg from './pdak.png'
+import cosmicapp from './cosmic'
 export default function Component() {
   const [activeSection, setActiveSection] = useState("about")
   const [isScrolling, setIsScrolling] = useState(false)
@@ -304,8 +305,8 @@ export default function Component() {
                 {
                   title: "Cosmic Number Quest",
                   description: "A full-stack project with React, Next, Node and postgres.",
-                  link: "https://github.com/vanshisop/SalonAppointment/blob/main/salon_test.sh",
-                  img: salonapp
+                  link: "https://my-guessing-number-lbhc.vercel.app/play",
+                  img: cosmicapp
                 },
                 {
                   title: "Movie Mania",
