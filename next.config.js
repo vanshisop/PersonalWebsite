@@ -6,5 +6,8 @@ const nextConfig = {
   }
   
 module.exports = {
-  
+  output: 'export',
+  basePath: '/_PersonalPortfolio',
+  // Add trailingSlash if necessary
+  trailingSlash: true,
 }
