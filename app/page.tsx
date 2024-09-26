@@ -7,7 +7,6 @@ import Image from "next/image"
 import img from "./asu-removebg-preview.png"
 import personalImg from "./Screenshot 2024-09-18 at 2.49.40 AM.png"
 import moviemania from './hmman.jpg'
-import salonapp from './salonapp.jpg'
 import datanal from './adad.jpeg'
 import msayImg from './pdak.png'
 import cosmicapp from './cosmic.png'
