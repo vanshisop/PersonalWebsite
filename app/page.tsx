@@ -302,16 +302,16 @@ export default function Component() {
                   img : personalImg,
                 },
                 {
+                  title: "Cosmic Number Quest",
+                  description: "A full-stack project with React, Next, Node and postgres.",
+                  link: "https://github.com/vanshisop/SalonAppointment/blob/main/salon_test.sh",
+                  img: salonapp
+                },
+                {
                   title: "Movie Mania",
                   description: "A full-stack movie guessing game built with Javascript, HTML,CSS",
                   link: "https://vanshisop.github.io/Moviemania/",
                   img: moviemania
-                },
-                {
-                  title: "Salon Appointment Scheduler",
-                  description: "A DBMS project made with Postgres and Bash to simulate real-time appointments made in a salon.",
-                  link: "https://github.com/vanshisop/SalonAppointment/blob/main/salon_test.sh",
-                  img: salonapp
                 },
                 {
                   title: "Meta Movie Analysis",
