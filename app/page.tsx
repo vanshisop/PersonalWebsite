@@ -309,7 +309,7 @@ export default function Component() {
                 },
                 {
                   title: "Movie Mania",
-                  description: "A full-stack movie guessing game built with Javascript, HTML,CSS",
+                  description: "A movie guessing game built with Javascript, HTML,CSS",
                   link: "https://vanshisop.github.io/Moviemania/",
                   img: moviemania
                 },
