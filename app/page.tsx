@@ -140,7 +140,7 @@ export default function Component() {
               <Github className="h-6 w-6" />
             </a>
             <a
-              href="www.linkedin.com/in/vansh2407"
+              href="https://linkedin.com/in/vansh2407"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-80 transition-opacity duration-300"
